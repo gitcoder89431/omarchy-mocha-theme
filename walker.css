@@ -1,68 +1,87 @@
-/*
-  (                                     )  (     
-  )\ )   )                 )         ( /(  )\ )  
- (()/(( /(              ( /(     (   )\())(()/(  
-  /(_))\()) (  (  `  )  )\()) (  )( ((_)\  /(_)) 
- (_))((_)\  )\ )\ /(/( ((_)\  )\(()\  ((_)(_))   
- | _ \ |(_)((_|(_|(_)_\| |(_)((_)((_)/ _ \/ __|  
- |  _/ ' \/ _ (_-< '_ \) ' \/ _ \ '_| (_) \__ \  
- |_| |_||_\___/__/ .__/|_||_\___/_|  \___/|___/  
-               |_|                                                                                                                         ███    ███                         
-
-*/
-
 @define-color selected-text #a6e3a1;
-@define-color text #f5c2e7;
+@define-color text #89b4fa;
 @define-color base #1e1e2e;
 @define-color border #cba6f7;
 @define-color foreground #cdd6f4;
 @define-color background #1e1e2e;
+@define-color mantle #181825;
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
 
 child:selected .item-box {
-    margin-left: 4px;
-    transition: margin-left 0.05s ease-out;
+  margin-left: 3px;
 }
 
 .input {
-    color: #ffffff;
-    caret-color: #ffffff;
+  color: @foreground;
+  caret-color: @text;
 }
 
 .input placeholder {
-    color: #ffffff;
+  color: alpha(@foreground, 0.6);
 }
 
 .placeholder {
-    color: #f9e2af;
+  color: #f9e2af;
+  font-style: italic;
 }
 
 window {
-    background-color: transparent;
-    color: @text;
-    border: none;
-    padding: 0;
-    box-shadow: none;
+  background-color: transparent;
+  color: @text;
+  border: none;
+  padding: 0;
+  box-shadow: none;
 }
 
-/* Walker Window Border */
 window .box-wrapper {
-    border-radius: 4px;
-    border: 2px solid alpha(@border, 0.7);  
-    padding: 18px 22px;
-    background: @base;
-    background-clip: padding-box;
-    box-shadow: 2px 2px 18px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  border: 1.5px solid alpha(@border, 0.50);
+  padding: 12px 14px;
+  background: alpha(@base, 0.95);
+  background-clip: padding-box;
+  box-shadow:
+    0 10px 24px alpha(@mantle, 0.56),
+    inset 0 1px 0 alpha(@foreground, 0.06);
 }
 
-/*
-     )                                     
-  ( /(  (  (               )        )      
-  )\()) )\ )\ )  (      ( /(     ( /(      
- ((_)\ ((_|()/(  )\  (  )\()) (  )\()) (   
-   ((_) _  ((_))((_) )\((_)\  )\((_)\  )\  
-  / _ \| | _| |_ | |((_) |(_)((_) |(_)((_) 
- | (_) | / _` | || / _ \ '_ Y _ \ '_ Y _ \ 
-  \___/|_\__,_|\__/\___/_.__|___/_.__|___/ 
-                                           
- 25-01-26
-*/
+.search-container {
+  background: alpha(@surface0, 0.88);
+  border: 1px solid alpha(@border, 0.30);
+  border-radius: 8px;
+  padding: 8px 10px;
+  box-shadow: inset 0 1px 0 alpha(@foreground, 0.06);
+}
+
+.item-box {
+  border-radius: 8px;
+  padding: 1px 8px 1px 10px;
+  transition: all 110ms ease;
+}
+
+child:hover .item-box {
+  background: alpha(@surface1, 0.42);
+}
+
+child:selected .item-box {
+  background: alpha(@border, 0.14);
+  border: none;
+  border-left: 2px solid alpha(@border, 0.72);
+}
+
+child:selected .item-box * {
+  color: @selected-text;
+}
+
+.item-image {
+  margin-right: 10px;
+  -gtk-icon-transform: scale(0.90);
+}
+
+.keybind-hints {
+  background: alpha(@mantle, 0.72);
+  border: 1px solid alpha(@border, 0.25);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-top: 8px;
+}
