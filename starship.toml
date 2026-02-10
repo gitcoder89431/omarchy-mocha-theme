@@ -1,10 +1,17 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 palette = "catppuccin_mocha"
+command_timeout = 500
+scan_timeout = 30
 
 add_newline = false
 format = '''
-[┌──](lavender)$directory([─](lavender)$git_branch)([─](lavender)$git_status)
-[└─](lavender) $character'''
+[╭─](overlay1)$directory$git_branch$git_status$cmd_duration$time
+[╰─](overlay1)$character'''
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold maroon)"
+vimcmd_symbol = "[❮](bold mauve)"
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
@@ -28,7 +35,9 @@ format = '\[[$symbol($version(-$name))]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
 
 [cmd_duration]
-format = '\[[⏱ $duration]($style)\]'
+format = '[\[](overlay1)[ 󰔛 $duration ]($style)[\]](overlay1)'
+style = 'bold yellow'
+min_time = 1000
 
 [cobol]
 format = '\[[$symbol($version)]($style)\]'
@@ -58,10 +67,11 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$loaded/$allowed]($style)\]'
 
 [directory]
-truncation_length = 2
+truncation_length = 3
 truncation_symbol = "…/"
-format = '[\[](lavender)[ $path ]($style)[\]](lavender)'
-style = 'bold blue'
+read_only = " 󰌾"
+format = '[\[](overlay1)[ $path ]($style)[\]](overlay1)'
+style = 'bold lavender'
 
 [docker_context]
 format = '\[[$symbol$context]($style)\]'
@@ -94,7 +104,7 @@ format = '\[[+$added]($added_style)\]\[[-$deleted]($deleted_style)\]'
 format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
 
 [git_branch]
-format = '[\[](lavender)[ $symbol$branch ]($style)[\]](lavender)'
+format = '[\[](overlay1)[ $symbol$branch ]($style)[\]](overlay1)'
 style = 'bold mauve'
 symbol = ' '
 
@@ -108,17 +118,17 @@ format = '\[[+$added]($added_style)\]\[[-$deleted]($deleted_style)\]'
 format = '\[[$state ($progress_current/$progress_total)]($style)\]'
 
 [git_status]
-format = '([\[](lavender) $all_status$ahead_behind [\]](lavender))'
+format = '([\[](overlay1) $all_status$ahead_behind [\]](overlay1))'
 style = ''
-untracked  = "[?${count} ](red)"
-modified   = "[${count}](yellow)"
+untracked  = "[?${count}](maroon)"
+modified   = "[!${count}](yellow)"
 staged     = "[+${count}](green)"
-renamed    = "[»${count}](green)"
+renamed    = "[»${count}](teal)"
 deleted    = "[✘${count}](red)"
-conflicted = "[](red)"
-ahead      = "[⇡${count}](green)"
-behind     = "[⇣${count}](green)"
-diverged   = "[⇕⇡${ahead_count}⇣${behind_count}](green)"
+conflicted = "[](peach)"
+ahead      = "[⇡${count}](sky)"
+behind     = "[⇣${count}](sky)"
+diverged   = "[⇕⇡${ahead_count}⇣${behind_count}](pink)"
 
 [gleam]
 format = '\[[$symbol($version)]($style)\]'
@@ -282,7 +292,10 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$workspace]($style)\]'
 
 [time]
-format = '\[[$time]($style)\]'
+disabled = false
+time_format = "%R"
+format = '[\[](overlay1)[  $time ]($style)[\]](overlay1)'
+style = 'bold sapphire'
 
 [typst]
 format = '\[[$symbol($version)]($style)\]'
