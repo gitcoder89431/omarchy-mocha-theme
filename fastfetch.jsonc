@@ -14,121 +14,121 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[38;2;203;166;247m┌──────────────────────Hardware──────────────────────┐\u001b[0m"
+      "format": "\u001b[38;2;137;220;235m┌──────────────────────Hardware──────────────────────┐\u001b[0m"
     },
     {
       "type": "host",
       "key": " PC",
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "cpu",
       "key": "│ ├",
       "showPeCoreCount": true,
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "gpu",
       "key": "│ ├",
       "detectionMethod": "pci",
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "display",
       "key": "│ ├󱄄",
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "disk",
       "key": "│ ├󰋊",
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "memory",
       "key": "│ ├",
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "swap",
       "key": "└ └󰓡 ",
-      "keyColor": "#a6e3a1"
+      "keyColor": "#94e2d5"
     },
     {
       "type": "custom",
-      "format": "\u001b[38;2;203;166;247m└────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[38;2;137;220;235m└────────────────────────────────────────────────────┘\u001b[0m"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[38;2;203;166;247m┌──────────────────────Software──────────────────────┐\u001b[0m"
+      "format": "\u001b[38;2;180;190;254m┌──────────────────────Software──────────────────────┐\u001b[0m"
     },
     {
       "type": "command",
       "key": "\ue900 OS",
-      "keyColor": "#74c7ec",
+      "keyColor": "#b4befe",
       "text": "version=$(omarchy-version); echo \"Omarchy $version\""
     },
     {
       "type": "command",
       "key": "│ ├󰘬",
-      "keyColor": "#74c7ec",
+      "keyColor": "#b4befe",
       "text": "branch=$(omarchy-version-branch); echo \"$branch\""
     },
     {
       "type": "command",
       "key": "│ ├󰔫",
-      "keyColor": "#74c7ec",
+      "keyColor": "#b4befe",
       "text": "channel=$(omarchy-version-channel); echo \"$channel\""
     },
     {
       "type": "kernel",
       "key": "│ ├",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "wm",
       "key": "│ ├",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "de",
       "key": " DE",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "terminal",
       "key": "│ ├",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "packages",
       "key": "│ ├󰏖",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "wmtheme",
       "key": "│ ├󰉼",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "command",
       "key": "│ ├󰸌",
-      "keyColor": "#74c7ec",
-      "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38;2;203;166;247m●\\e[38;2;245;194;231m●\\e[38;2;116;199;236m●\\e[38;2;166;227;161m●\\e[38;2;249;226;175m●\\e[38;2;243;139;168m●\\e[0m\""
+      "keyColor": "#b4befe",
+      "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38;2;203;166;247m●\\e[38;2;245;194;231m●\\e[38;2;180;190;254m●\\e[38;2;137;220;235m●\\e[38;2;148;226;213m●\\e[38;2;166;227;161m●\\e[38;2;250;179;135m●\\e[38;2;249;226;175m●\\e[0m\""
     },
     {
       "type": "terminalfont",
       "key": "└ └",
-      "keyColor": "#74c7ec"
+      "keyColor": "#b4befe"
     },
     {
       "type": "custom",
-      "format": "\u001b[38;2;203;166;247m└────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[38;2;180;190;254m└────────────────────────────────────────────────────┘\u001b[0m"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[38;2;203;166;247m┌────────────────Age / Uptime / Update───────────────┐\u001b[0m"
+      "format": "\u001b[38;2;250;179;135m┌────────────────Age / Uptime / Update───────────────┐\u001b[0m"
     },
     {
       "type": "command",
@@ -149,7 +149,7 @@
     },
     {
       "type": "custom",
-      "format": "\u001b[38;2;203;166;247m└────────────────────────────────────────────────────┘\u001b[0m"
+      "format": "\u001b[38;2;250;179;135m└────────────────────────────────────────────────────┘\u001b[0m"
     },
     "break"
   ]
