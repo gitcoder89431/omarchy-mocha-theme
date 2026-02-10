@@ -13,7 +13,6 @@
   "modules-center": [
     "clock",
     "custom/voxtype",
-    "idle_inhibitor",
     "custom/update",
     "custom/screenrecording-indicator",
     "mpris"
@@ -21,8 +20,8 @@
   "modules-right": [
     "group/tray-expander",
     "custom/updatespacman",
+    "idle_inhibitor",
     "bluetooth",
-    "backlight",
     "network",
     "pulseaudio",
     "power-profiles-daemon",
@@ -133,18 +132,6 @@
     "signal": 7,
     "interval": 21600
   },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "tooltip-format": "{percent}%",
-    "format-icons": [
-      "🌑",
-      "🌘",
-      "🌗",
-      "🌖",
-      "🌕"
-    ]
-  },
   "custom/updatespacman": {
     "format": "{}{icon}",
     "return-type": "json",
@@ -157,7 +144,7 @@
   },
   "cpu": {
     "interval": 2,
-    "format": "{usage}% 󰍛",
+    "format": "󰍛",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
@@ -179,8 +166,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": "󰅶",
+      "deactivated": "󰾪"
     }
   },
   "network": {
@@ -203,9 +190,9 @@
     "on-click": "omarchy-launch-wifi"
   },
   "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
+    "format": "{icon}",
+    "format-discharging": "{icon}",
+    "format-charging": "{icon}",
     "format-plugged": "",
     "format-icons": {
       "charging": [

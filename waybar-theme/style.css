@@ -2,7 +2,7 @@
 
 * {
   border: none;
-  font-family: 'CaskaydiaMono Nerd Font Propo';
+  font-family: "CaskaydiaMono Nerd Font Propo", "JetBrainsMono Nerd Font Propo", "Symbols Nerd Font";
   min-height: 0;
 }
 
@@ -29,6 +29,7 @@ window#waybar.empty #window{
     border: 1.5px solid rgba(203, 166, 247, 0.40);
     border-radius: 10px;
     margin: 0px 8px 4px 8px;
+    padding: 0px 10px;
     background-color: alpha(@background, 0.86);
     box-shadow: none;
     transition-property: background-color;
@@ -52,7 +53,6 @@ window#waybar.empty #window{
 #custom-omarchy {
   font-size: 15px;
 }
-
 
 #workspaces button {
   all: initial;
@@ -184,16 +184,11 @@ tooltip label {
 }
 
 #idle_inhibitor {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   color: @foreground;
  }
 
 #idle_inhibitor.activated {
-  color: #178b76;
-  animation-name: blink-inhibitor;
-  animation-duration: 1s;
+  color: @color10;
 }
 
 #mpris {
