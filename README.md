@@ -37,6 +37,37 @@ omarchy-theme-set mocha
 
 Extra reference files are in `extras/` (Catppuccin/Base16 resources and app snippets).
 
+## Attribution and Credits
+
+This theme is a derivative/customized setup built on top of other projects. Major credits:
+
+- Omarchy base/theme system:
+  - Omarchy project and config conventions power this theme layout and runtime behavior.
+  - Project: https://omarchy.org
+- Waybar base (major upstream for this theme):
+  - `waybar-theme/` in this repo was adapted from HANCORE's Waybar work, especially the V4.2 direction you referenced during this build.
+  - Source repo: https://github.com/HANCORE-linux/waybar-themes
+- Catppuccin palette and ecosystem:
+  - Core palette definitions and flavor standards come from Catppuccin.
+  - Source repo: https://github.com/catppuccin/catppuccin
+- Catppuccin downstream config sources used for extras/adaptations:
+  - Starship: https://github.com/catppuccin/starship
+  - Hyprlock: https://github.com/catppuccin/hyprlock
+  - fzf: https://github.com/catppuccin/fzf
+  - eza: https://github.com/catppuccin/eza
+  - Helix: https://github.com/catppuccin/helix
+  - Zellij: https://github.com/catppuccin/zellij
+  - Zed: https://github.com/catppuccin/zed
+  - Base16 mappings: https://github.com/catppuccin/base16
+
+If any attribution is incomplete or incorrect, open an issue and it will be fixed.
+
+## License and Third-Party Notes
+
+- This repo contains original edits plus adapted configs from upstream projects.
+- Third-party names, palettes, and derived snippets remain under their respective upstream licenses and terms.
+- `backgrounds/` assets are curated wallpapers; original rights stay with their creators.
+
 ## Recommended Fonts
 
 - Nerd Font Propo variant for prompt/icons

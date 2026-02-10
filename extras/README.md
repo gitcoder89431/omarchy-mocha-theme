@@ -1,6 +1,6 @@
 # Omarchy Mocha Extras (Catppuccin Sources)
 
-These are optional integrations pulled from your local Catppuccin repos in `~/repos/dev`.
+These are optional integrations from Catppuccin upstream repositories.
 
 ## Included
 
@@ -12,6 +12,30 @@ These are optional integrations pulled from your local Catppuccin repos in `~/re
 - `hypr/mocha.conf` (Catppuccin Hyprland variables)
 - `hypr/hyprlock-catppuccin.conf` (Catppuccin Hyprlock example)
 - `base16/catppuccin-mocha.yaml`
+
+## Source Attribution (Per Extras File)
+
+All extras are adapted/copied from Catppuccin-maintained repositories and retain upstream credit.
+
+- `fzf/catppuccin-fzf-mocha.sh`
+  - Source: https://github.com/catppuccin/fzf
+- `eza/catppuccin-mocha-mauve.yml`
+  - Source: https://github.com/catppuccin/eza
+- `helix/themes/catppuccin_mocha.toml`
+  - Source: https://github.com/catppuccin/helix
+- `zellij/catppuccin.kdl`
+  - Source: https://github.com/catppuccin/zellij
+- `zed/catppuccin-mauve.json`
+  - Source: https://github.com/catppuccin/zed
+- `hypr/mocha.conf`
+  - Source: https://github.com/catppuccin/catppuccin (palette values)
+- `hypr/hyprlock-catppuccin.conf`
+  - Source: https://github.com/catppuccin/hyprlock
+- `base16/catppuccin-mocha.yaml`
+  - Source: https://github.com/catppuccin/base16
+
+Palette authority:
+- https://github.com/catppuccin/catppuccin
 
 ## Quick Apply
 
