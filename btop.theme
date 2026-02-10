@@ -1,0 +1,93 @@
+####################################################
+#   (                                     )  (     #
+#   )\ )   )                 )         ( /(  )\ )  #
+#  (()/(( /(              ( /(     (   )\())(()/(  #
+#   /(_))\()) (  (  `  )  )\()) (  )( ((_)\  /(_)) #
+#  (_))((_)\  )\ )\ /(/( ((_)\  )\(()\  ((_)(_))   #
+#  | _ \ |(_)((_|(_|(_)_\| |(_)((_)((_)/ _ \/ __|  #
+#  |  _/ ' \/ _ (_-< '_ \) ' \/ _ \ '_| (_) \__ \  #
+#  |_| |_||_\___/__/ .__/|_||_\___/_|  \___/|___/  #
+#                |_|                               #                                                                                          ███    ███                         
+####################################################
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#1e1e2e"
+
+# Main text color
+theme[main_fg]="#cdd6f4"
+
+# Title color for boxes
+theme[title]="#cba6f7"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#f5c2e7"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#45475a"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#cdd6f4"
+
+# Color of inactive/disabled text (effects proc_list gradient)
+theme[inactive_fg]="#585b70"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#94e2d5"
+
+# Box outline and divider line color
+theme[cpu_box]="#cba6f7"
+theme[mem_box]="#a6e3a1"
+theme[net_box]="#94e2d5"
+theme[proc_box]="#f5c2e7"
+theme[div_line]="#585b70"
+
+# Gradient for all meters and graphs
+theme[temp_start]="#a6e3a1"
+theme[temp_mid]="#f9e2af"
+theme[temp_end]="#f38ba8"
+
+# (effects proc_list gradient)
+theme[cpu_start]="#a6e3a1"
+theme[cpu_mid]="#94e2d5"
+theme[cpu_end]="#cba6f7"
+
+theme[free_start]="#a6e3a1"
+theme[free_mid]="#94e2d5"
+theme[free_end]="#cba6f7"
+
+
+theme[cached_start]="#94e2d5"
+theme[cached_mid]="#f5c2e7"
+theme[cached_end]="#cba6f7"
+
+
+theme[available_start]="#a6e3a1"
+theme[available_mid]="#94e2d5"
+theme[available_end]="#cdd6f4"
+
+
+theme[used_start]="#f5c2e7"
+theme[used_mid]="#f9e2af"
+theme[used_end]="#f38ba8"
+
+
+theme[download_start]="#94e2d5"
+theme[download_mid]="#f5c2e7"
+theme[download_end]="#cba6f7"
+
+
+theme[upload_start]="#a6e3a1"
+theme[upload_mid]="#94e2d5"
+theme[upload_end]="#cba6f7"
+
+#  
+#      )                                     
+#   ( /(  (  (               )        )      
+#   )\()) )\ )\ )  (      ( /(     ( /(      
+#  ((_)\ ((_|()/(  )\  (  )\()) (  )\()) (   
+#    ((_) _  ((_))((_) )\((_)\  )\((_)\  )\  
+#   / _ \| | _| |_ | |((_) |(_)((_) |(_)((_) 
+#  | (_) | / _` | || / _ \ '_ Y _ \ '_ Y _ \ 
+#   \___/|_\__,_|\__/\___/_.__|___/_.__|___/ 
+#                                            
+#  26-02-01

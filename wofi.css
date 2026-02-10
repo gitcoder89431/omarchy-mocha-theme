@@ -1,0 +1,75 @@
+/*
+  (                                     )  (     
+  )\ )   )                 )         ( /(  )\ )  
+ (()/(( /(              ( /(     (   )\())(()/(  
+  /(_))\()) (  (  `  )  )\()) (  )( ((_)\  /(_)) 
+ (_))((_)\  )\ )\ /(/( ((_)\  )\(()\  ((_)(_))   
+ | _ \ |(_)((_|(_|(_)_\| |(_)((_)((_)/ _ \/ __|  
+ |  _/ ' \/ _ (_-< '_ \) ' \/ _ \ '_| (_) \__ \  
+ |_| |_||_\___/__/ .__/|_||_\___/_|  \___/|___/  
+               |_|                                                                                                                         ███    ███                         
+
+*/
+
+@define-color bg #1e1e2e;
+@define-color fg #cdd6f4;
+@define-color gray1 #45475a;
+@define-color gray2 #585b70;
+@define-color gray3 #cba6f7;
+@define-color gray4 #a6e3a1;
+@define-color gray5 #f5c2e7;
+@define-color fg_bright #cdd6f4;
+
+window {
+    background-color: @bg;
+    border: 2px solid @gray3;
+}
+
+input {
+    background-color: @bg;
+    color: @fg;
+    border: 1px solid @gray2;
+}
+
+input:selected {
+    background-color: @gray1;
+    color: @fg_bright;
+}
+
+#entry {
+    color: @fg;
+    background-color: @bg;
+    padding: 5px;
+    margin: 2px;
+}
+
+#entry:selected {
+    background-color: @gray1;
+    color: @fg_bright;
+}
+
+scrollbar {
+    background-color: @bg;
+}
+
+scrollbar slider {
+    background-color: @gray2;
+    border-radius: 5px;
+}
+
+scrollbar slider:hover {
+    background-color: @gray3;
+}
+
+/*
+     )                                     
+  ( /(  (  (               )        )      
+  )\()) )\ )\ )  (      ( /(     ( /(      
+ ((_)\ ((_|()/(  )\  (  )\()) (  )\()) (   
+   ((_) _  ((_))((_) )\((_)\  )\((_)\  )\  
+  / _ \| | _| |_ | |((_) |(_)((_) |(_)((_) 
+ | (_) | / _` | || / _ \ '_ Y _ \ '_ Y _ \ 
+  \___/|_\__,_|\__/\___/_.__|___/_.__|___/ 
+                                           
+ 25-01-26
+*/

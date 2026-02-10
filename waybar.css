@@ -1,0 +1,45 @@
+/*
+*  
+*  (                                     )  (     
+*   )\ )   )                 )         ( /(  )\ )  
+*  (()/(( /(              ( /(     (   )\())(()/(  
+*   /(_))\()) (  (  `  )  )\()) (  )( ((_)\  /(_)) 
+*  (_))((_)\  )\ )\ /(/( ((_)\  )\(()\  ((_)(_))   
+*  | _ \ |(_)((_|(_|(_)_\| |(_)((_)((_)/ _ \/ __|  
+*  |  _/ ' \/ _ (_-< '_ \) ' \/ _ \ '_| (_) \__ \  
+*  |_| |_||_\___/__/ .__/|_||_\___/_|  \___/|___/  
+*                  |_|
+* 
+* */
+
+@define-color background #1e1e2e;
+@define-color foreground #cdd6f4;
+
+@define-color color0 #1e1e2e;
+@define-color color2 #a6e3a1;
+@define-color color3 #f9e2af;
+@define-color color4 #cba6f7;
+@define-color color5 #f5c2e7;
+@define-color color6 #94e2d5;
+@define-color color7 #cdd6f4;
+@define-color color8 #585b70;
+@define-color color9 #f38ba8;
+@define-color color10 #a6e3a1;
+@define-color color11 #f9e2af;
+@define-color color12 #cba6f7;
+@define-color color13 #f5c2e7;
+@define-color color14 #94e2d5;
+@define-color color15 #cdd6f4;
+
+/*
+*      )                                     
+*   ( /(  (  (               )        )      
+*   )\()) )\ )\ )  (      ( /(     ( /(      
+*  ((_)\ ((_|()/(  )\  (  )\()) (  )\()) (   
+*    ((_) _  ((_))((_) )\((_)\  )\((_)\  )\  
+*   / _ \| | _| |_ | |((_) |(_)((_) |(_)((_) 
+*  | (_) | / _` | || / _ \ '_ Y _ \ '_ Y _ \ 
+*   \___/|_\__,_|\__/\___/_.__|___/_.__|___/ 
+*                                            
+*  25-01-26
+*/

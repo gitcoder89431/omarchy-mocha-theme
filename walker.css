@@ -1,0 +1,68 @@
+/*
+  (                                     )  (     
+  )\ )   )                 )         ( /(  )\ )  
+ (()/(( /(              ( /(     (   )\())(()/(  
+  /(_))\()) (  (  `  )  )\()) (  )( ((_)\  /(_)) 
+ (_))((_)\  )\ )\ /(/( ((_)\  )\(()\  ((_)(_))   
+ | _ \ |(_)((_|(_|(_)_\| |(_)((_)((_)/ _ \/ __|  
+ |  _/ ' \/ _ (_-< '_ \) ' \/ _ \ '_| (_) \__ \  
+ |_| |_||_\___/__/ .__/|_||_\___/_|  \___/|___/  
+               |_|                                                                                                                         ███    ███                         
+
+*/
+
+@define-color selected-text #a6e3a1;
+@define-color text #f5c2e7;
+@define-color base #1e1e2e;
+@define-color border #cba6f7;
+@define-color foreground #cdd6f4;
+@define-color background #1e1e2e;
+
+child:selected .item-box {
+    margin-left: 4px;
+    transition: margin-left 0.05s ease-out;
+}
+
+.input {
+    color: #ffffff;
+    caret-color: #ffffff;
+}
+
+.input placeholder {
+    color: #ffffff;
+}
+
+.placeholder {
+    color: #f9e2af;
+}
+
+window {
+    background-color: transparent;
+    color: @text;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Walker Window Border */
+window .box-wrapper {
+    border-radius: 4px;
+    border: 2px solid alpha(@border, 0.7);  
+    padding: 18px 22px;
+    background: @base;
+    background-clip: padding-box;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 1);
+}
+
+/*
+     )                                     
+  ( /(  (  (               )        )      
+  )\()) )\ )\ )  (      ( /(     ( /(      
+ ((_)\ ((_|()/(  )\  (  )\()) (  )\()) (   
+   ((_) _  ((_))((_) )\((_)\  )\((_)\  )\  
+  / _ \| | _| |_ | |((_) |(_)((_) |(_)((_) 
+ | (_) | / _` | || / _ \ '_ Y _ \ '_ Y _ \ 
+  \___/|_\__,_|\__/\___/_.__|___/_.__|___/ 
+                                           
+ 25-01-26
+*/
