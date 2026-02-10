@@ -19,39 +19,46 @@
     {
       "type": "host",
       "key": " PC",
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "cpu",
       "key": "│ ├",
       "showPeCoreCount": true,
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "gpu",
       "key": "│ ├",
       "detectionMethod": "pci",
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "display",
       "key": "│ ├󱄄",
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "disk",
       "key": "│ ├󰋊",
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "memory",
       "key": "│ ├",
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "swap",
       "key": "└ └󰓡 ",
-      "keyColor": "#94e2d5"
+      "keyColor": "#94e2d5",
+      "outputColor": "#89dceb"
     },
     {
       "type": "custom",
@@ -66,60 +73,59 @@
       "type": "command",
       "key": "\ue900 OS",
       "keyColor": "#b4befe",
+      "outputColor": "#b4befe",
       "text": "version=$(omarchy-version); echo \"Omarchy $version\""
     },
     {
       "type": "command",
       "key": "│ ├󰘬",
       "keyColor": "#b4befe",
+      "outputColor": "#b4befe",
       "text": "branch=$(omarchy-version-branch); echo \"$branch\""
     },
     {
       "type": "command",
       "key": "│ ├󰔫",
       "keyColor": "#b4befe",
+      "outputColor": "#b4befe",
       "text": "channel=$(omarchy-version-channel); echo \"$channel\""
     },
     {
       "type": "kernel",
       "key": "│ ├",
-      "keyColor": "#b4befe"
+      "keyColor": "#b4befe",
+      "outputColor": "#b4befe"
     },
     {
       "type": "wm",
       "key": "│ ├",
-      "keyColor": "#b4befe"
-    },
-    {
-      "type": "de",
-      "key": " DE",
-      "keyColor": "#b4befe"
+      "keyColor": "#b4befe",
+      "outputColor": "#b4befe"
     },
     {
       "type": "terminal",
       "key": "│ ├",
-      "keyColor": "#b4befe"
+      "keyColor": "#b4befe",
+      "outputColor": "#b4befe"
     },
     {
       "type": "packages",
       "key": "│ ├󰏖",
-      "keyColor": "#b4befe"
-    },
-    {
-      "type": "wmtheme",
-      "key": "│ ├󰉼",
-      "keyColor": "#b4befe"
+      "keyColor": "#b4befe",
+      "outputColor": "#b4befe"
     },
     {
       "type": "command",
       "key": "│ ├󰸌",
       "keyColor": "#b4befe",
+      "outputColor": "#b4befe",
       "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38;2;203;166;247m●\\e[38;2;245;194;231m●\\e[38;2;180;190;254m●\\e[38;2;137;220;235m●\\e[38;2;148;226;213m●\\e[38;2;166;227;161m●\\e[38;2;250;179;135m●\\e[38;2;249;226;175m●\\e[0m\""
     },
     {
       "type": "terminalfont",
       "key": "└ └",
-      "keyColor": "#b4befe"
+      "keyColor": "#b4befe",
+      "outputColor": "#b4befe"
     },
     {
       "type": "custom",
@@ -134,17 +140,20 @@
       "type": "command",
       "key": "󱦟 OS Age",
       "keyColor": "#fab387",
+      "outputColor": "#f9e2af",
       "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
     },
     {
       "type": "uptime",
       "key": "󱫐 Uptime",
-      "keyColor": "#fab387"
+      "keyColor": "#fab387",
+      "outputColor": "#f9e2af"
     },
     {
       "type": "command",
       "key": " Update",
       "keyColor": "#fab387",
+      "outputColor": "#f9e2af",
       "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
     },
     {
