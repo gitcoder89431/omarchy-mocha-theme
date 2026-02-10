@@ -6,7 +6,6 @@
   "height": 32,
   "margin": "6px 6px 0px 6px",
   "modules-left": [
-    "custom/omarchy",
     "hyprland/workspaces",
     "hyprland/window"
   ],
