@@ -13,17 +13,15 @@
     "clock",
     "custom/voxtype",
     "custom/update",
-    "custom/screenrecording-indicator",
-    "mpris"
+    "custom/screenrecording-indicator"
   ],
   "modules-right": [
+    "mpris",
     "group/tray-expander",
-    "custom/updatespacman",
     "idle_inhibitor",
     "bluetooth",
     "network",
     "pulseaudio",
-    "power-profiles-daemon",
     "cpu",
     "battery"
   ],
@@ -58,7 +56,7 @@
   },
   "hyprland/window": {
     "format": "{title} - {class}",
-    "max-length": 30,
+    "max-length": 42,
     "rewrite": {
       " - ": "", // if no window is focused, a single dash is displayed, this removes it
       "(.*?) - Chromium - chromium": "  $1 ",
@@ -110,13 +108,13 @@
     "on-click-right": "omarchy-voxtype-config",
     "on-click": "omarchy-voxtype-model"
   },
-   "mpris": {
+  "mpris": {
     "format": "󰋎 {title}",
-    "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
-    "max-length": 14,
+    "format-paused": "<i><span color='#b4befe'>{status_icon} {artist}</span></i>",
+    "max-length": 24,
     "player-icons": {
-      "default": "⏸",
-      "mpv": "🎵"
+      "default": "󰎇",
+      "mpv": ""
     },
     "status-icons": {
       "paused": "󰋐"  
@@ -131,19 +129,16 @@
     "signal": 7,
     "interval": 21600
   },
-  "custom/updatespacman": {
-    "format": "{}{icon}",
-    "return-type": "json",
-    "format-icons": {
-      "has-updates": " 󰏖",
-      "updated": "",
-    },
-    "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --no-zero-output"
-  },
   "cpu": {
     "interval": 2,
     "format": "󰍛",
+    "states": {
+      "free_teal": 21,
+      "free_yellow": 41,
+      "free_peach": 61,
+      "free_maroon": 76,
+      "free_red": 91
+    },
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
@@ -225,7 +220,10 @@
     "interval": 5,
     "on-click": "omarchy-menu power",
     "states": {
-      "warning": 20,
+      "teal": 85,
+      "yellow": 65,
+      "peach": 45,
+      "maroon": 25,
       "critical": 10
     }
   },
