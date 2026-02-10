@@ -1,97 +1,53 @@
 # Omarchy Mocha Theme
 
-Mocha is the next Omarchy theme iteration, currently bootstrapped from the Aura2 layout so it stays installable while palette and styling evolve.
+Catppuccin Mocha theme pack for Omarchy, tuned for a soft glass/clay look with Mauve accents.
 
 ## Preview
 
-![Theme preview](preview.png)
+![Omarchy Mocha preview](preview.png)
 
-## Install (Regular Omarchy)
-
-Install from GitHub with Omarchy's native installer:
+## Install
 
 ```bash
 omarchy-theme-install https://github.com/gitcoder89431/omarchy-mocha-theme
-```
-
-Then set it (or re-set it later):
-
-```bash
 omarchy-theme-set mocha
 ```
 
-Notes:
-- `omarchy-theme-install` usually activates the theme automatically.
-- Use `omarchy-theme-list` to confirm the exact folder/theme name.
+## What Is Included
 
-## Install (ThemeManager+, Experimental)
+- Hyprland: `hyprland.conf`
+- Hyprlock: `hyprlock.conf`
+- Waybar: `waybar.css`, `waybar-theme/config.jsonc`, `waybar-theme/style.css`
+- Walker: `walker.css`
+- Mako: `mako.ini`
+- SwayOSD: `swayosd.css`
+- Fastfetch: `fastfetch.jsonc`
+- Starship: `starship.toml`
+- Browser accent: `chromium.theme`
+- Terminal/app themes: `alacritty.toml`, `kitty.conf`, `ghostty.conf`, `warp.yaml`, `gtk.css`, `wofi.css`, `btop.theme`, `vscode.json`, `aether.zed.json`, `vencord.theme.css`, `neovim.lua`
 
-ThemeManager+ support is useful, but treat this path as beta/experimental.
+## Notes
 
-```bash
-theme-manager install https://github.com/gitcoder89431/omarchy-mocha-theme
-theme-manager set mocha -w
-```
-
-Useful commands:
-- `theme-manager set mocha -w` applies theme plus the theme's `waybar-theme/`.
-- `theme-manager waybar auto` reapplies only the current theme's Waybar config.
-- `theme-manager` opens the interactive picker.
-
-## Theme Structure
-
-This repo is organized to work with Omarchy:
-
-```text
-omarchy-mocha-theme/
-├── colors.toml
-├── hyprland.conf
-├── hyprlock.conf
-├── waybar.css
-├── waybar-theme/
-│   ├── config.jsonc
-│   └── style.css
-├── backgrounds/
-└── ... app/theme files
-```
-
-Key paths:
-- `waybar-theme/` provides per-theme Waybar config.
-- `hyprlock.conf` defines lockscreen palette variables.
-- `colors.toml` drives generated template-based outputs in Omarchy.
-
-## Included
-
-- Hyprland (`hyprland.conf`)
-- Hyprlock (`hyprlock.conf`)
-- Waybar (`waybar.css`, `waybar-theme/`)
-- VSCode/Cursor theme setter metadata (`vscode.json` -> `Catppuccin Mocha`)
-- Terminals: Alacritty, Kitty, Ghostty, Warp
-- Notifications/UI: mako, SwayOSD, GTK, Wofi
-- Apps: Chromium, Vencord, Aether/Zed, Neovim theme config
-- Utilities: btop theme, Walker theme
+- This repo is intended to be the source of truth for the `mocha` theme.
+- Omarchy reads files from `~/.config/omarchy/current/theme/` after `omarchy-theme-set mocha`.
+- `starship.toml` and `fastfetch.jsonc` are theme-owned and can be switched by your Omarchy `theme-set` hook.
+- Chromium uses `chromium.theme` (RGB string). Current value is dark Mantle-style.
 
 ## Optional Extras
 
-This repo includes a curated Catppuccin Mocha extras pack under `extras/` for:
+Extra reference files are in `extras/` (Catppuccin/Base16 resources and app snippets).
 
-- `fzf`
-- `eza` (Mocha + Mauve accent)
-- `helix`
-- `zellij`
-- `zed`
-- Catppuccin Hypr files (`mocha.conf` + Hyprlock sample)
-- Base16 Mocha reference
+## Recommended Fonts
 
-See `extras/README.md` for exact apply commands.
+- Nerd Font Propo variant for prompt/icons
+- DSEG (optional) for segmented clock styling
 
-## Dependencies
+## Local Development
 
-Recommended:
-- Nerd Font Propo family (CaskaydiaMono / Hack / JetBrains Mono Nerd Font Propo)
-- DSEG font family for segmented clock display (optional)
+```bash
+# Apply current repo changes
+omarchy-theme-set mocha
 
-## Credits
-
-- Based on the original phosphor structure and Omarchy theme conventions.
-- Thanks to @OldJobobo and contributors for the Waybar and ThemeManager+ compatibility improvements.
+# Re-apply browser color after changing chromium.theme
+omarchy-theme-set-browser
+```
