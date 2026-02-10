@@ -8,8 +8,13 @@
 @define-color surface0 #313244;
 @define-color surface1 #45475a;
 
-child:selected .item-box {
-  margin-left: 3px;
+child:selected,
+child:selected:focus,
+child:selected:hover {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .input {
@@ -65,8 +70,12 @@ child:hover .item-box {
 
 child:selected .item-box {
   background: alpha(@border, 0.14);
-  border: none;
-  border-left: 2px solid alpha(@border, 0.72);
+  border: none !important;
+  border-left: 2px solid alpha(@border, 0.72) !important;
+  border-right: 0 !important;
+  border-inline-end: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 child:selected .item-box * {
