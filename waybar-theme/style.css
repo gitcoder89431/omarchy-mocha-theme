@@ -26,10 +26,10 @@ window#waybar.empty #window{
 }
 
 #waybar > box {
-    border: 1.5px solid alpha(@color12, 0.40);
+    border: 1.5px solid rgba(203, 166, 247, 0.40);
     border-radius: 10px;
     margin: 0px 8px 4px 8px;
-    background-color: alpha(@background, 1);
+    background-color: alpha(@background, 0.86);
     box-shadow: none;
     transition-property: background-color;
     transition-duration: .5s;
